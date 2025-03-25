@@ -4,47 +4,58 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="8dp"
-    android:background="@drawable/widget_bg">
+    android:padding="12dp"
+    android:background="@color/widget_background">
 
+    <!-- Station Navigation -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:padding="4dp">
+        android:padding="6dp">
 
-        <Button
+        <!-- Left Navigation Button -->
+        <ImageView
             android:id="@+id/button_left"
             android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:text="←"
-            android:textSize="16sp"/>
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_left"
+            android:background="@drawable/button_bg"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Previous Station" />
 
+        <!-- Station Name -->
         <TextView
             android:id="@+id/station_name"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Station A"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textStyle="bold"
+            android:textColor="@color/widget_text_primary"
             android:gravity="center" />
 
-        <Button
+        <!-- Right Navigation Button -->
+        <ImageView
             android:id="@+id/button_right"
             android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:text="→"
-            android:textSize="16sp"/>
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_right"
+            android:background="@drawable/button_bg"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Next Station" />
     </LinearLayout>
 
+    <!-- Bus List (RemoteViewsService required) -->
     <ListView
         android:id="@+id/bus_list"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:divider="@android:color/darker_gray"
+        android:divider="@color/widget_divider"
         android:dividerHeight="1dp"
-        android:scrollbars="vertical"/>
-
+        android:scrollbars="none"/>
 </LinearLayout>

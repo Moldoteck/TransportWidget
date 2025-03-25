@@ -11,6 +11,13 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="widgetBackground">#FFFFFF</item>-->
+<!--        <item name="textColorPrimary">#212121</item>-->
+<!--        <item name="iconColor">#424242</item>-->
+<!--        <item name="buttonBackground">?android:attr/selectableItemBackground</item>-->
+<!--        <item name="listItemBackground">#F5F5F5</item>-->
+<!--        <item name="dividerColor">#E0E0E0</item>-->
+<!--        <item name="accentColor">#1976D2</item> &lt;!&ndash; Blue Accent &ndash;&gt;-->
     </style>
 </resources>
